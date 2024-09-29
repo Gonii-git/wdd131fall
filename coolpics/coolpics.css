@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Mooli', sans-serif;
+}
+
+/* Global styling */
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery figure {
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid var(--secondary-color);
+}
+
+/* Menu button for mobile */
+.menu-button {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu-button:hover {
+    background-color: var(--primary-color);
+}
+
+
+.hide {
+    display: none;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 700px) {
+    .gallery {
+        justify-content: space-evenly;
+    }
+
+    .gallery figure {
+        width: calc(50% - 20px); /* Two-column layout */
+        height: 250px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery figure {
+        width: calc(33.33% - 20px); /* Three-column layout */
+        height: 250px;
+    }
+
+    /* Horizontal navigation for large screens */
+    nav {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .menu-button {
+        display: none; /* Hide menu button on wide screens */
+    }
+}
+
+a:link,
+a:visited {
+    color: var(--accent-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px;
+}
+
+/* Styling for headlines */
+h1, h2 {
+    font-family: var(--secondary-font);
+    color: var(--text-light);
+}
+
+/* Style for the image viewer modal */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.viewer .close-viewer {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Make the modal visible */
+.viewer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
