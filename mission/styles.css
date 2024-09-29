@@ -1,4 +1,6 @@
+/* styles.css */
 
+/* Default Light Mode Styles */
 body {
     font-size: 20px;
     font-family: 'Times New Roman';
@@ -9,8 +11,6 @@ body {
     background: #fff;
 }
 
-
-
 #content {
     max-width: 600px; 
     margin: 40px auto; 
@@ -18,15 +18,9 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background: #fff;
     border: 1px solid #ccc; 
-    border-top: 1px solid #ccc; 
-    border-bottom: 1px solid#ccc;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-    
-
-
+/* Title Styles */
 .the-title h1 {
     font-size: 32px;
     text-align: center;
@@ -47,17 +41,13 @@ body {
     width: 100%;
 }
 
-
+/* Paragraph and List Styles */
 main p {
     text-align: left; 
     margin-bottom: 1em;
     padding-left: 35px;
     padding-right: 35px;
-    /*font-weight: bold;*/
-
-    
 }
-
 
 .goals {
     padding-left: 20px;
@@ -66,12 +56,9 @@ main p {
     padding-right: 65px;
     font-size: 18px;
     line-height: 24px;
-    /*font-weight: bold;*/
-    
-    
 }
 
-
+/* Logo Styles */
 .logo {
     display: block; 
     width: 150px; 
@@ -85,10 +72,16 @@ main p {
     color: white; /* White text */
 }
 
-/* Dark theme styles for subtitle */
-.dark h2 {
-    color: #006EB6; /* Adjusted blue with better contrast */
+.dark #content {
+    background-color: #444; /* Slightly lighter dark for content */
+    border-color: #555; /* Darker border */
 }
 
-/* Any other dark theme-specific styles */
+.dark .the-title h1,
+.dark .the-title h2,
+.dark main p,
+.dark .goals {
+    color: #fff; /* White text for better contrast */
+}
 
+/* Keep logo styles unaffected */

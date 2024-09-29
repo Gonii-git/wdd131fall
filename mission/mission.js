@@ -1,19 +1,17 @@
-// Select the dropdown element
+// Select the dropdown element and the logo
 const themeSelector = document.querySelector('#themeSelector');
-const logo = document.querySelector('#logo'); // Assuming there's an img with id "logo"
+const logo = document.querySelector('#logo');
 
 function changeTheme() {
-    // Check the current value of the select element
     const currentTheme = themeSelector.value;
 
-    // If the value is 'dark', add the dark class to the body and change the logo
+    // Change the body class based on the selected theme
     if (currentTheme === 'dark') {
         document.body.classList.add('dark');
-        logo.src = 'path_to_white_logo.png'; // Change to the path of your white logo
+        logo.src = 'images/byui-logo_white.png'; 
+        
     } else {
-        // Otherwise, remove the dark class and revert to the blue logo
         document.body.classList.remove('dark');
-        logo.src = 'path_to_blue_logo.png'; // Change to the path of your blue logo
     }
 }
 
