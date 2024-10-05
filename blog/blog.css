@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Lora', Impact, serif;
+    text-align: center;
+    padding: 20px;
+    color: #473144;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #EFC69B;
+    padding: 10px;
+    border-bottom: 3px solid #AF1B3F;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: end;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #AF1B3F;
+}
+
+/* Main Layout */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px;
+}
+
+section#articles {
+    padding: 20px;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: #AF1B3F;
+}
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #EFC69B;
+    border-top: 3px solid #AF1B3F;
+}
+
