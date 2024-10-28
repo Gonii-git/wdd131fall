@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trivia.css">
+    <script src="trivia.js" defer></script>
+</head>
+<body>
+    <!-- Single header for the entire page -->
+    <header>
+        <h1>Trivia Game</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all-countries.html">All Countries</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="#">Records</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome page section -->
+    <div id="welcome-page">
+        <form id="user-info">
+            <h1>Welcome to Trivia Game!</h1>
+            <label for="name">Name:</label>
+              <input type="text" id="name" required pattern="[A-Za-z\s]+" title="Please enter letters only." ><br>
+
+             <label for="age">Age:</label>
+             <input type="number" id="age" required min="1" max="120"  title="Please enter a valid age (up to 3 digits)." ><br>
+
+              <label for="country">Country:</label>
+              <input type="text" id="country" required pattern="[A-Za-z\s]+" title="Please enter letters only." ><br>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select><br>
+
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+
+    <!-- Game section -->
+    <div id="game-section" style="display: none;">
+        <main>
+            <div id="game-container" class="game-container">
+                <h2 id="question">Flags</h2>
+                <img id="flag-image" alt="Country flag" style="display: none; max-width: 100%; height: auto;">
+                <div class="options-container">
+                    <button class="option">Option 1</button>
+                    <button class="option">Option 2</button>
+                    <button class="option">Option 3</button>
+                    <button class="option">Option 4</button>
+                </div>
+                <div id="timer">10s</div>
+                <button id="next-question" disabled>Next Question</button>
+            </div>
+            <div id="did-you-know">
+                <p>Did you know? <span id="fact"></span></p>
+            </div>
+        </main>
+
+        
+    </div>
+
+   
+    <footer>
+        <p>&copy; Nii 2024 Geography Trivia Game</p>
+    </footer>
+</body>
+</html>

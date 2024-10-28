@@ -1,0 +1,79 @@
+{
+  "questions": [
+    {
+      "question": "Which country does this flag belong to?",
+      "image": "https://flagpedia.net/data/flags/h80/dk.png",
+      "options": ["Denmark", "France", "Germany", "Brazil"],
+      "correct": 0,
+      "fact": "Denmark has the oldest continuously used national flag in the world."
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      "correct": 2,
+      "fact": "Canberra was selected as a compromise between Sydney and Melbourne."
+    },
+    {
+      "question": "Which continent is the Sahara Desert located on?",
+      "options": ["Asia", "Africa", "North America", "Australia"],
+      "correct": 1,
+      "fact": "The Sahara is the largest hot desert in the world."
+    },
+    {
+      "question": "Which country does this flag belong to?",
+      "image": "https://flagpedia.net/data/flags/h80/jp.png",
+      "options": ["Japan", "China", "South Korea", "Vietnam"],
+      "correct": 0,
+      "fact": "Japan's flag is known as the Nisshōki, symbolizing the sun."
+    },
+    {
+      "question": "What is the largest ocean on Earth?",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+      "correct": 2,
+      "fact": "The Pacific Ocean covers more than 63 million square miles."
+    },
+    {
+      "question": "What is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correct": 1,
+      "fact": "The Nile is about 4,135 miles long, flowing through northeastern Africa."
+    },
+    {
+      "question": "Which continent is home to the Amazon Rainforest?",
+      "options": ["Africa", "Asia", "South America", "Australia"],
+      "correct": 2,
+      "fact": "The Amazon Rainforest is the largest tropical rainforest in the world."
+    },
+    {
+      "question": "Which country has the highest population?",
+      "options": ["India", "United States", "China", "Russia"],
+      "correct": 2,
+      "fact": "China has over 1.4 billion people."
+    },
+    {
+      "question": "Which country does this flag belong to?",
+      "image": "https://flagpedia.net/data/flags/h80/mx.png",
+      "options": ["Mexico", "Italy", "Spain", "Portugal"],
+      "correct": 0,
+      "fact": "Mexico's flag features an eagle holding a snake in its beak."
+    },
+    {
+      "question": "Which country does this flag belong to?",
+      "image": "https://flagpedia.net/data/flags/h80/fr.png",
+      "options": ["France", "Italy", "Spain", "Portugal"],
+      "correct": 0,
+      "fact": "France’s flag is known as the Tricolour, symbolizing liberty, equality, and fraternity."
+    },
+    {
+      "question": "What is the smallest country in the world by area?",
+      "options": ["Monaco", "Liechtenstein", "Vatican City", "San Marino"],
+      "correct": 2,
+      "fact": "Vatican City covers just 0.2 square miles."
+    }
+  ]
+}
+
+
+
+
+ 

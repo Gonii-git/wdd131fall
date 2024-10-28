@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Countries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trivia.css">
+</head>
+<body>
+    <header>
+        <h1>All Countries</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all-countries.html">All Countries</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="#">Records</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explore Countries Around the World</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a country..." >
+            <button id="search-button">Search</button>
+        </div>
+
+        <div id="countries-grid" class="countries-grid">
+            <!-- Countries will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nii 2024 Geography Trivia Game</p>
+    </footer>
+
+    <script src="trivia.js" defer></script>
+</body>
+</html>

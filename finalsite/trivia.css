@@ -1,0 +1,311 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #15527A;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome-page {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#welcome-page input, #welcome-page select {
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#welcome-page button {
+    background-color: #15527A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#welcome-page button:hover {
+    background-color: #2980b9;
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #2B5F2D;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Game Section */
+#game-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#game-container {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #34495e;
+    margin: 0 0 20px 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; 
+    height: auto;
+    padding: 10px;
+}
+
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.option {
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 45%; /* Make each button take up about half the width */
+    max-width: 45%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e67e22;
+}
+
+#timer {
+    font-size: 1.2em;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+#next-question {
+    background-color: #15527A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+#next-question:hover {
+    background-color: #2980b9;
+}
+
+/* Did You Know Section */
+#did-you-know {
+    background-color: #f39c12;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.4s ease, opacity 0.4s;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#did-you-know.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Leaderboard */
+#leaderboard {
+    margin-top: 30px;
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+
+#leaderboard h3 {
+    font-size: 1.5em;
+    color: #f39c12;
+}
+
+#leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboard li {
+    background-color: #3498db;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/* Countries grid for all-countries page */
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling each country card */
+.country {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-top: 30px;
+}
+
+.country:hover {
+    transform: scale(1.05);
+}
+
+/* Flag image */
+.country img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+/* Country name */
+.country p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Country info (capital, population) */
+.country-info {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #15527A;
+    color: white;
+    text-align: center;
+    width: 100%;
+    /* margin: 0; */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
