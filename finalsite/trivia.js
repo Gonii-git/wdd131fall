@@ -40,6 +40,8 @@ function setupGame() {
     const wrongSound = new Audio('sounds/wrong.mp3');
     const timeUpSound = new Audio('sounds/time-up.mp3');
 
+    
+
     // User Info Form Submission
     document.getElementById('user-info').addEventListener('submit', function(event) {
         event.preventDefault();
